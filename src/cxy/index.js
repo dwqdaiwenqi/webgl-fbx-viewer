@@ -9,7 +9,7 @@ import './index.less'
 var switchMaterial,mapColor,initStandardMat
 
 export default {
-	init($el){
+	init($el,param={}){
 
 		var container, stats, controls;
 		var camera, scene, renderer, light;
@@ -19,6 +19,8 @@ export default {
 		var textureCube
 		var scale
 		var loader
+
+		this.param = param
 		//currentDrawMode = drawMode.standard;
 
 		// var side = THREE.FrontSide
@@ -242,7 +244,7 @@ export default {
 			scene.add(new THREE.AmbientLight(0x222222))
 
 			loader = new FBXLoader()
-			loader.load('//192.168.94.204:7878/models/cxy-model/12312.FBX',  (object)=> {
+			loader.load(this.param.src,  (object)=> {
 
 				this.object = object
 

@@ -358,7 +358,7 @@ var urlEscape = __webpack_require__(/*! ../../node_modules/_css-loader@2.1.1@css
 var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../down-small.png */ "./src/down-small.png"));
 
 // Module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  border: none;\n}\n.dg .c input[type=text] {\n  width: 96%;\n}\n.webgl-gui {\n  height: 100%;\n}\n.style-15::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);\n  border-radius: 10px;\n}\n.style-15::-webkit-scrollbar {\n  width: 7px;\n}\n.style-15::-webkit-scrollbar-thumb {\n  border-radius: 15px;\n  background-color: #3c3c3c;\n}\n.webgl-menu {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  width: 200px;\n  box-sizing: border-box;\n  position: absolute;\n  left: 0;\n  top: 0;\n  color: white;\n  height: 100%;\n  font-size: 14px;\n}\n.webgl-menu .x-title {\n  color: #888;\n  margin: 5px 0;\n}\n.webgl-menu .color-transparent {\n  background-color: black;\n}\n.switch-active {\n  background-color: #1caad9;\n}\n.wireframe--active {\n  border: 2px solid white;\n}\n.opt--active {\n  background-color: #1caad9;\n}\n.inspector-material-channels-inner > div {\n  padding: 5px 0;\n  padding-left: 10px;\n  margin: 3px 0;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n.webgl-stage-loading {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  visibility: visible;\n}\n.webgl-stage-loading .webgl-stage-loading-poster {\n  width: 100%;\n  height: 100%;\n  background-repeat: no-repeat;\n  background-size: cover;\n  -webkit-filter: brightness(0.4);\n          filter: brightness(0.4);\n}\n.webgl-stage-loading .webgl-stage-loading-inner {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n          justify-content: center;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n}\n.webgl-stage-loading .webgl-stage-loading-text {\n  color: #e0e0e0;\n  font-weight: 400;\n}\n.webgl-stage-loading .webgl-stage-loading-bar {\n  width: 230px;\n  height: 10px;\n  height: 4px;\n  border-radius: 2px;\n  background: #797979;\n  margin: 15px 0;\n  overflow: hidden;\n}\n.webgl-stage-loading .webgl-stage-loading-rect {\n  display: block;\n  height: 100%;\n  background: #1caad9;\n  width: 0%;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n@-webkit-keyframes xhide {\n  0% {\n    -webkit-filter: opacity(1);\n            filter: opacity(1);\n    visibility: visible;\n  }\n  100% {\n    -webkit-filter: opacity(0);\n            filter: opacity(0);\n    visibility: hidden;\n  }\n}\n@keyframes xhide {\n  0% {\n    -webkit-filter: opacity(1);\n            filter: opacity(1);\n    visibility: visible;\n  }\n  100% {\n    -webkit-filter: opacity(0);\n            filter: opacity(0);\n    visibility: hidden;\n  }\n}\n.webgl-stage-loading--hide {\n  -webkit-animation: xhide 1s 0.7s forwards;\n          animation: xhide 1s 0.7s forwards;\n}\n.inspector-geometry-inner > div {\n  padding: 5px 0;\n  padding-left: 10px;\n  margin: 3px 0;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n.webgl-menu > header {\n  height: 30px;\n  background-color: rgba(0, 0, 0, 0.7);\n  box-sizing: border-box;\n  padding: 0 10px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  cursor: pointer;\n}\n.webgl-menu > header .icon_down {\n  display: block;\n  width: 20px;\n  height: 20px;\n  background: url(" + ___CSS_LOADER_URL___0___ + ") no-repeat;\n  background-size: cover;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n.webgl-menu > header .icon_down--active {\n  -webkit-transform: rotateZ(180deg);\n          transform: rotateZ(180deg);\n}\n.webgl-menu > .inspector-modes {\n  height: calc(100% - 30px);\n  overflow-y: scroll;\n  background-color: rgba(0, 0, 0, 0.7);\n  box-sizing: border-box;\n  padding: 0 10px;\n}\n.inspector-modes > div {\n  margin: 10px 0;\n}\n.webgl-stage-scene {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n}\n.webgl-stage-scene > canvas {\n  cursor: -webkit-grab;\n  cursor: grab;\n}\n.webgl-stage-texture {\n  position: absolute;\n  left: 0;\n  top: 0;\n  height: 100%;\n  display: none;\n}\n#webgl-stage canvas {\n  outline: none;\n}\n.webgl-gui {\n  position: absolute;\n  left: 0;\n  top: 0;\n}\n.inspector-wireframe-color {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  justify-content: space-around;\n}\n.inspector-wireframe-color > div {\n  width: 21px;\n  height: 21px;\n  border-radius: 4px;\n  cursor: pointer;\n  box-sizing: border-box;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-wireframe-color > div:hover {\n  border: 2px solid white;\n}\n.inspector-viewport .inspector-viewport-toggle-button {\n  display: -webkit-box;\n  display: flex;\n  height: 27px;\n  border-radius: 5px;\n  background: #0d0d0d;\n  overflow: hidden;\n}\n.inspector-viewport .inspector-viewport-toggle-button > div {\n  width: 33.333333%;\n  text-align: center;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n          justify-content: center;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n.inspector-skybox {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  color: #ccc;\n}\n.inspector-skybox .inspector-skybox-label {\n  margin-left: 10px;\n}\n.inspector-skybox .inspector-skybox-switch {\n  width: 42px;\n  height: 23px;\n  border-radius: 5px;\n  background: #ccc;\n  cursor: pointer;\n  position: relative;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-skybox .inspector-skybox-switch--active {\n  background: #1caad9;\n}\n.inspector-skybox .inspector-skybox-switch--active .inspector-single-rect {\n  border-radius: 4px;\n  width: 15px;\n  height: 100%;\n  background: white;\n  position: absolute;\n  top: 0;\n  left: 70%;\n}\n.inspector-skybox .inspector-single-rect {\n  border-radius: 4px;\n  width: 15px;\n  height: 100%;\n  background: white;\n  position: absolute;\n  left: 0;\n  top: 0;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-single-sided {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  color: #ccc;\n}\n.inspector-single-sided .inspector-single-sided-label {\n  margin-left: 10px;\n}\n.inspector-single-sided .inspector-single-sided-switch {\n  width: 42px;\n  height: 23px;\n  border-radius: 5px;\n  background: #ccc;\n  cursor: pointer;\n  position: relative;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-single-sided .inspector-single-sided-switch--active {\n  background: #1caad9;\n}\n.inspector-single-sided .inspector-single-sided-switch--active .inspector-single-rect {\n  border-radius: 4px;\n  width: 15px;\n  height: 100%;\n  background: white;\n  position: absolute;\n  top: 0;\n  left: 70%;\n}\n.inspector-single-sided .inspector-single-rect {\n  border-radius: 4px;\n  width: 15px;\n  height: 100%;\n  background: white;\n  position: absolute;\n  left: 0;\n  top: 0;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-render-inner > div {\n  cursor: pointer;\n}\n.inspector-material-channels > div {\n  cursor: pointer;\n}\n.inspector-geometry-inner > div {\n  cursor: pointer;\n}\n.inspector-uv-inner > div {\n  cursor: pointer;\n}\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  border: none;\n}\n.dg .c input[type=text] {\n  width: 96%;\n}\n.webgl-gui {\n  height: 100%;\n}\n.style-15::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);\n  border-radius: 10px;\n}\n.style-15::-webkit-scrollbar {\n  width: 7px;\n}\n.style-15::-webkit-scrollbar-thumb {\n  border-radius: 15px;\n  background-color: #3c3c3c;\n}\n.webgl-menu {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  width: 200px;\n  box-sizing: border-box;\n  position: absolute;\n  left: 0;\n  top: 0;\n  color: white;\n  height: 100%;\n  font-size: 14px;\n}\n.webgl-menu .x-title {\n  color: #888;\n  margin: 5px 0;\n}\n.webgl-menu .color-transparent {\n  background-color: black;\n}\n.switch-active {\n  background-color: #1caad9;\n}\n.wireframe--active {\n  border: 2px solid white;\n}\n.opt--active {\n  background-color: #1caad9;\n}\n.inspector-material-channels-inner > div {\n  padding: 5px 0;\n  padding-left: 10px;\n  margin: 3px 0;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n.webgl-stage-loading {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  visibility: visible;\n}\n.webgl-stage-loading .webgl-stage-loading-poster {\n  width: 100%;\n  height: 100%;\n  background-repeat: no-repeat;\n  background-size: cover;\n  -webkit-filter: brightness(0.4);\n          filter: brightness(0.4);\n}\n.webgl-stage-loading .webgl-stage-loading-inner {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n          justify-content: center;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n}\n.webgl-stage-loading .webgl-stage-loading-text {\n  color: #e0e0e0;\n  font-weight: 400;\n}\n.webgl-stage-loading .webgl-stage-loading-bar {\n  width: 230px;\n  height: 10px;\n  height: 4px;\n  border-radius: 2px;\n  background: #797979;\n  margin: 15px 0;\n  overflow: hidden;\n}\n.webgl-stage-loading .webgl-stage-loading-rect {\n  display: block;\n  height: 100%;\n  background: #1caad9;\n  width: 0%;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n@-webkit-keyframes xhide {\n  0% {\n    -webkit-filter: opacity(1);\n            filter: opacity(1);\n    visibility: visible;\n  }\n  100% {\n    -webkit-filter: opacity(0);\n            filter: opacity(0);\n    visibility: hidden;\n  }\n}\n@keyframes xhide {\n  0% {\n    -webkit-filter: opacity(1);\n            filter: opacity(1);\n    visibility: visible;\n  }\n  100% {\n    -webkit-filter: opacity(0);\n            filter: opacity(0);\n    visibility: hidden;\n  }\n}\n.webgl-stage-loading--hide {\n  -webkit-animation: xhide 1s 0.7s forwards;\n          animation: xhide 1s 0.7s forwards;\n}\n.inspector-geometry-inner > div {\n  padding: 5px 0;\n  padding-left: 10px;\n  margin: 3px 0;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n.webgl-menu > header {\n  height: 30px;\n  background-color: rgba(0, 0, 0, 0.7);\n  box-sizing: border-box;\n  padding: 0 10px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  cursor: pointer;\n}\n.webgl-menu > header .icon_down {\n  display: block;\n  width: 20px;\n  height: 20px;\n  background: url(" + ___CSS_LOADER_URL___0___ + ") no-repeat;\n  background-size: cover;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n.webgl-menu > header .icon_down--active {\n  -webkit-transform: rotateZ(180deg);\n          transform: rotateZ(180deg);\n}\n.webgl-menu > .inspector-modes {\n  height: calc(100% - 30px);\n  overflow-y: scroll;\n  background-color: rgba(0, 0, 0, 0.7);\n  box-sizing: border-box;\n  padding: 0 10px;\n}\n.inspector-modes > div {\n  margin: 10px 0;\n}\n.webgl-stage-scene {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n}\n.webgl-stage-scene > canvas {\n  cursor: -webkit-grab;\n  cursor: grab;\n}\n.webgl-stage-texture {\n  position: absolute;\n  left: 0;\n  top: 0;\n  height: 100%;\n  display: none;\n}\n.webgl-gui {\n  position: absolute;\n  left: 0;\n  top: 0;\n}\n.inspector-wireframe-color {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  justify-content: space-around;\n}\n.inspector-wireframe-color > div {\n  width: 21px;\n  height: 21px;\n  border-radius: 4px;\n  cursor: pointer;\n  box-sizing: border-box;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-wireframe-color > div:hover {\n  border: 2px solid white;\n}\n.inspector-viewport .inspector-viewport-toggle-button {\n  display: -webkit-box;\n  display: flex;\n  height: 27px;\n  border-radius: 5px;\n  background: #0d0d0d;\n  overflow: hidden;\n}\n.inspector-viewport .inspector-viewport-toggle-button > div {\n  width: 33.333333%;\n  text-align: center;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n          justify-content: center;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n.inspector-skybox {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  color: #ccc;\n}\n.inspector-skybox .inspector-skybox-label {\n  margin-left: 10px;\n}\n.inspector-skybox .inspector-skybox-switch {\n  width: 42px;\n  height: 23px;\n  border-radius: 5px;\n  background: #ccc;\n  cursor: pointer;\n  position: relative;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-skybox .inspector-skybox-switch--active {\n  background: #1caad9;\n}\n.inspector-skybox .inspector-skybox-switch--active .inspector-single-rect {\n  border-radius: 4px;\n  width: 15px;\n  height: 100%;\n  background: white;\n  position: absolute;\n  top: 0;\n  left: 70%;\n}\n.inspector-skybox .inspector-single-rect {\n  border-radius: 4px;\n  width: 15px;\n  height: 100%;\n  background: white;\n  position: absolute;\n  left: 0;\n  top: 0;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-single-sided {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  color: #ccc;\n}\n.inspector-single-sided .inspector-single-sided-label {\n  margin-left: 10px;\n}\n.inspector-single-sided .inspector-single-sided-switch {\n  width: 42px;\n  height: 23px;\n  border-radius: 5px;\n  background: #ccc;\n  cursor: pointer;\n  position: relative;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-single-sided .inspector-single-sided-switch--active {\n  background: #1caad9;\n}\n.inspector-single-sided .inspector-single-sided-switch--active .inspector-single-rect {\n  border-radius: 4px;\n  width: 15px;\n  height: 100%;\n  background: white;\n  position: absolute;\n  top: 0;\n  left: 70%;\n}\n.inspector-single-sided .inspector-single-rect {\n  border-radius: 4px;\n  width: 15px;\n  height: 100%;\n  background: white;\n  position: absolute;\n  left: 0;\n  top: 0;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-render-inner > div {\n  cursor: pointer;\n}\n.inspector-material-channels > div {\n  cursor: pointer;\n}\n.inspector-geometry-inner > div {\n  cursor: pointer;\n}\n.inspector-uv-inner > div {\n  cursor: pointer;\n}\n", ""]);
 
 
 
@@ -12415,6 +12415,7 @@ var switchMaterial, mapColor, initStandardMat;
   init: function init($el) {
     var _this = this;
 
+    var param = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var container, stats, controls;
     var camera, scene, renderer, light;
     var clock = new _build_three_module_js__WEBPACK_IMPORTED_MODULE_1__["Clock"]();
@@ -12422,7 +12423,8 @@ var switchMaterial, mapColor, initStandardMat;
     var material;
     var textureCube;
     var scale;
-    var loader; //currentDrawMode = drawMode.standard;
+    var loader;
+    this.param = param; //currentDrawMode = drawMode.standard;
     // var side = THREE.FrontSide
 
     mapColor = function mapColor(map) {
@@ -12595,7 +12597,7 @@ var switchMaterial, mapColor, initStandardMat;
       this.textureCube = textureCube;
       scene.add(new _build_three_module_js__WEBPACK_IMPORTED_MODULE_1__["AmbientLight"](0x222222));
       loader = new _examples_jsm_loaders_FBXLoader_js__WEBPACK_IMPORTED_MODULE_3__["FBXLoader"]();
-      loader.load('//192.168.94.204:7878/models/cxy-model/12312.FBX', function (object) {
+      loader.load(this.param.src, function (object) {
         _this2.object = object;
 
         _this2.drawMaterialMode('standard');
@@ -12988,11 +12990,19 @@ if(false) {}
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.less */ "./src/index.less");
-/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ "./src/menu.js");
-/* harmony import */ var _cxy__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./cxy */ "./src/cxy/index.js");
-/* harmony import */ var _tex__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tex */ "./src/tex.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/_@babel_runtime@7.7.6@@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.less */ "./src/index.less");
+/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ "./src/menu.js");
+/* harmony import */ var _cxy__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cxy */ "./src/cxy/index.js");
+/* harmony import */ var _tex__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./tex */ "./src/tex.js");
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
  //   https://sketchfab.com/3d-models/low-poly-angel-female-0d92f3223693446ea17e7fd612a58b2a
 
 
@@ -13008,21 +13018,24 @@ __webpack_require__.r(__webpack_exports__);
 
     var param = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     this.$el = typeof $el === 'string' ? document.querySelector($el) : $el;
+    this.param = param; //debugger
+
+    this.createNodes();
     this.$stage_gl = this.$el.querySelector('.webgl-stage-scene');
     this.$stage_texture = this.$el.querySelector('.webgl-stage-texture');
     this.$stage_complete = this.$el.querySelector('.webgl-stage-complete');
-    var menu = Object(_menu__WEBPACK_IMPORTED_MODULE_1__["default"])(document.querySelector('.webgl-gui'));
+    var menu = Object(_menu__WEBPACK_IMPORTED_MODULE_2__["default"])(document.querySelector('.webgl-gui'));
     menu.ev.on('wireframe', function (prop) {
       //Gl.setColor(prop.val)
       //menu.reset()
       console.log('wireframe:', prop);
-      _cxy__WEBPACK_IMPORTED_MODULE_2__["default"].setColor(prop.val);
+      _cxy__WEBPACK_IMPORTED_MODULE_3__["default"].setColor(prop.val);
 
       _this.drawMode('wireframe');
     });
     menu.ev.on('single-sided', function (prop) {
       console.log(prop);
-      _cxy__WEBPACK_IMPORTED_MODULE_2__["default"].setMaterialSide(prop.val);
+      _cxy__WEBPACK_IMPORTED_MODULE_3__["default"].setMaterialSide(prop.val);
     });
     menu.ev.on('viewport', function (prop) {
       // console.log('viewport...', prop)
@@ -13039,13 +13052,13 @@ __webpack_require__.r(__webpack_exports__);
       };
       action[prop.val](_this);
       setTimeout(function () {
-        _cxy__WEBPACK_IMPORTED_MODULE_2__["default"].resize();
+        _cxy__WEBPACK_IMPORTED_MODULE_3__["default"].resize();
       });
     });
     menu.ev.on('render', function (e) {});
     menu.ev.on('skybox', function (prop) {
       //console.log('skybox:', prop)
-      _cxy__WEBPACK_IMPORTED_MODULE_2__["default"].switchSkyBox(prop.val);
+      _cxy__WEBPACK_IMPORTED_MODULE_3__["default"].switchSkyBox(prop.val);
     });
     menu.ev.on('material-channels', function (prop) {
       //console.log('material-channels...',prop)
@@ -13055,8 +13068,8 @@ __webpack_require__.r(__webpack_exports__);
       //console.log(prop)
       _this.drawMode(prop.val);
     });
-    _cxy__WEBPACK_IMPORTED_MODULE_2__["default"].init(this.$stage_gl);
-    _cxy__WEBPACK_IMPORTED_MODULE_2__["default"].onProgress(function (prop) {
+    _cxy__WEBPACK_IMPORTED_MODULE_3__["default"].init(this.$stage_gl, _objectSpread({}, this.param));
+    _cxy__WEBPACK_IMPORTED_MODULE_3__["default"].onProgress(function (prop) {
       // this.progress(prop)
       _this.$el.querySelector('.webgl-stage-loading-rect').style.width = prop + '%';
     }, function () {
@@ -13065,8 +13078,14 @@ __webpack_require__.r(__webpack_exports__);
       _this.$stage_complete.style.visibility = 'visible';
     }); //console.log(Gl.textures)
 
-    _tex__WEBPACK_IMPORTED_MODULE_3__["default"].init(this.$stage_texture);
+    _tex__WEBPACK_IMPORTED_MODULE_4__["default"].init(this.$stage_texture);
     return this;
+  },
+  onError: function onError(fn) {
+    this.handle_err = fn;
+  },
+  createNodes: function createNodes() {
+    this.$el.innerHTML = "\n      <section class=\"webgl-stage-complete\" style=\"visibility: hidden;\">\n          <section class=\"webgl-stage-scene\"></section>\n          <section class=\"webgl-stage-texture\"></section>\n          <section class=\"webgl-gui\">\n            <section class=\"webgl-menu\">\n              <header>\n                <span class=\"icon_down\"></span>\n                <span style=\"padding-left:5px;\">Model Inspector</span>\n              </header>\n              <div class=\"inspector-modes style-15\" style=\"display:none;\">\n                <div class=\"inspector-wireframe\">\n                  <div class=\"inspector-wireframe-title x-title\">WIREFRAME</div>\n                  <div class=\"inspector-wireframe-color\">\n                    <div  class=\"color-transparent\" data-val=\"black\"></div>\n                    <div style=\"background:purple;\" data-val=\"purple\"></div>\n                    <div style=\"background:blue;\" data-val=\"blue\"></div>\n                    <div style=\"background:gray;\" data-val=\"gray\"></div>\n                    <div style=\"background:red;\" data-val=\"red\"></div>\n                    <div style=\"background:yellow;\" data-val=\"yellow\"></div>\n                    <div style=\"background:green;\" data-val=\"green\"></div>\n                  </div>\n                </div>\n                <div class=\"inspector-single-sided\">\n                  <div class=\"inspector-single-sided-switch\">\n                    <div class=\"inspector-single-rect\"></div>\n                  </div>\n                  <div class=\"inspector-single-sided-label\">\n                    Single Sided\n                  </div>\n                </div>\n                <div class=\"inspector-skybox\">\n                  <div class=\"inspector-skybox-switch\">\n                    <div class=\"inspector-single-rect\"></div>\n                  </div>\n                  <div class=\"inspector-skybox-label\">\n                    Skybox\n                  </div>\n                </div>\n                <div class=\"inspector-viewport\">\n                  <div class=\"inspector-title x-title\">VIEWPORT</div>\n                  <div class=\"inspector-viewport-toggle-button\">\n                    <div data-val=\"3d\">3D</div>\n                    <div data-val=\"3d+2d\">3D+2D</div>\n                    <div data-val=\"2d\">2D</div>\n                  </div>\n                </div>\n                \n  \n                <div class=\"inspector-material-channels\">\n                  <div class=\"inspector-title x-title\">MATERIAL CHANNELS</div>\n                  <div class=\"inspector-material-channels-inner\">\n                    <div class=\"base-color\" data-val=\"standar\"><span>Standar</span></div>\n                    <div class=\"base-color\" data-val=\"base-color\"><span>Base Color</span></div>\n                    <div class=\"emission\" data-val=\"emission\"><span>Emission</span></div>\n                    <div class=\"bump-map\" data-val=\"bump-map\"><span>Bump Map</span></div>\n                    <div class=\"normal\" data-val=\"normal\"><span>normal</span></div>\n                    <div class=\"opacity\" data-val=\"opacity\"><span>opacity</span></div>\n                    <div class=\"ao-map\" data-val=\"ao-map\"><span>Ao Map</span></div>\n                    <div class=\"lightmap\" data-val=\"lightmap\">LightMap</div>\n                  </div>\n                </div>\n                <div class=\"inspector-geometry\">\n                  <div class=\"inspector-title x-title\">GEOMETRY</div>\n                  <div class=\"inspector-geometry-inner\">\n                    <div class=\"matcap\" data-val=\"matcap\"><span>Matcap</span></div>\n                    <div class=\"wireframe\"  data-val=\"wireframe\"><span>Wireframe</span></div>\n                    <div class=\"vertex-normals\" data-val=\"vertex-normals\"><span>Vertex Normals</span></div>\n                    <div class=\"uv\" data-val=\"uv\"><span>Uv</span></div>\n                  </div>\n                </div>\n              </div>\n      \n            </section>\n            \n            <section class=\"general-controls\"></section>\n          </section>\n\n        </section>\n\n        <section class=\"webgl-stage-loading\" >\n          <div class=\"webgl-stage-loading-poster\" style=\"background-image:url(".concat(this.param.poster, ")\"></div>\n          <div class=\"webgl-stage-loading-inner\">\n            <div class=\"webgl-stage-loading-text\">Loading 3D Model</div>\n            <div class=\"webgl-stage-loading-bar\">\n              <span class=\"webgl-stage-loading-rect\"></span>\n            </div>\n          </div>\n        </section>");
   },
   progress: function progress(prop, fn) {},
   scene2d: function scene2d() {
@@ -13078,8 +13097,8 @@ __webpack_require__.r(__webpack_exports__);
       width: '100%',
       left: '0'
     });
-    _tex__WEBPACK_IMPORTED_MODULE_3__["default"].resize();
-    _tex__WEBPACK_IMPORTED_MODULE_3__["default"].showTexture(this.currentMode, _cxy__WEBPACK_IMPORTED_MODULE_2__["default"].textures[this.mode]);
+    _tex__WEBPACK_IMPORTED_MODULE_4__["default"].resize();
+    _tex__WEBPACK_IMPORTED_MODULE_4__["default"].showTexture(this.currentMode, _cxy__WEBPACK_IMPORTED_MODULE_3__["default"].textures[this.mode]);
   },
   scene3d: function scene3d() {
     Object.assign(this.$stage_texture.style, {
@@ -13102,9 +13121,9 @@ __webpack_require__.r(__webpack_exports__);
       left: '0',
       width: '50%'
     });
-    _tex__WEBPACK_IMPORTED_MODULE_3__["default"].resize();
-    console.log(_cxy__WEBPACK_IMPORTED_MODULE_2__["default"].textures, this.currentMode, this.mode);
-    _tex__WEBPACK_IMPORTED_MODULE_3__["default"].showTexture(this.currentMode, _cxy__WEBPACK_IMPORTED_MODULE_2__["default"].textures[this.mode]);
+    _tex__WEBPACK_IMPORTED_MODULE_4__["default"].resize();
+    console.log(_cxy__WEBPACK_IMPORTED_MODULE_3__["default"].textures, this.currentMode, this.mode);
+    _tex__WEBPACK_IMPORTED_MODULE_4__["default"].showTexture(this.currentMode, _cxy__WEBPACK_IMPORTED_MODULE_3__["default"].textures[this.mode]);
   },
 
   get mode() {
@@ -13132,11 +13151,11 @@ __webpack_require__.r(__webpack_exports__);
 
   drawMode: function drawMode(val) {
     this.currentMode = val;
-    console.log(_cxy__WEBPACK_IMPORTED_MODULE_2__["default"].textures, this.currentMode, this.mode);
-    _tex__WEBPACK_IMPORTED_MODULE_3__["default"].showTexture(this.currentMode, _cxy__WEBPACK_IMPORTED_MODULE_2__["default"].textures[this.mode]); //Tex.showTexture(this.currentMode, Gl.textures[this.currentMode])
+    console.log(_cxy__WEBPACK_IMPORTED_MODULE_3__["default"].textures, this.currentMode, this.mode);
+    _tex__WEBPACK_IMPORTED_MODULE_4__["default"].showTexture(this.currentMode, _cxy__WEBPACK_IMPORTED_MODULE_3__["default"].textures[this.mode]); //Tex.showTexture(this.currentMode, Gl.textures[this.currentMode])
     //debugger
 
-    _cxy__WEBPACK_IMPORTED_MODULE_2__["default"].drawMaterialMode(this.mode);
+    _cxy__WEBPACK_IMPORTED_MODULE_3__["default"].drawMaterialMode(this.mode);
   }
 });
 

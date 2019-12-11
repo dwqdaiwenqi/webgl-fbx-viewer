@@ -15,6 +15,9 @@ export default {
   init($el,param={}){
 
     this.$el = typeof $el==='string'?document.querySelector($el):$el
+    this.param = param
+    //debugger
+    this.createNodes()
 
     this.$stage_gl = this.$el.querySelector('.webgl-stage-scene')
     this.$stage_texture = this.$el.querySelector('.webgl-stage-texture')
@@ -79,7 +82,7 @@ export default {
       this.drawMode(prop.val)
     })
 
-    Gl.init(this.$stage_gl)
+    Gl.init(this.$stage_gl,{...this.param})
 
     Gl.onProgress(prop=>{
       // this.progress(prop)
@@ -93,6 +96,100 @@ export default {
     Tex.init(this.$stage_texture)
 
     return this
+  },
+  onError(fn){
+    this.handle_err = fn
+  },
+  createNodes(){
+    this.$el.innerHTML = `
+      <section class="webgl-stage-complete" style="visibility: hidden;">
+          <section class="webgl-stage-scene"></section>
+          <section class="webgl-stage-texture"></section>
+          <section class="webgl-gui">
+            <section class="webgl-menu">
+              <header>
+                <span class="icon_down"></span>
+                <span style="padding-left:5px;">Model Inspector</span>
+              </header>
+              <div class="inspector-modes style-15" style="display:none;">
+                <div class="inspector-wireframe">
+                  <div class="inspector-wireframe-title x-title">WIREFRAME</div>
+                  <div class="inspector-wireframe-color">
+                    <div  class="color-transparent" data-val="black"></div>
+                    <div style="background:purple;" data-val="purple"></div>
+                    <div style="background:blue;" data-val="blue"></div>
+                    <div style="background:gray;" data-val="gray"></div>
+                    <div style="background:red;" data-val="red"></div>
+                    <div style="background:yellow;" data-val="yellow"></div>
+                    <div style="background:green;" data-val="green"></div>
+                  </div>
+                </div>
+                <div class="inspector-single-sided">
+                  <div class="inspector-single-sided-switch">
+                    <div class="inspector-single-rect"></div>
+                  </div>
+                  <div class="inspector-single-sided-label">
+                    Single Sided
+                  </div>
+                </div>
+                <div class="inspector-skybox">
+                  <div class="inspector-skybox-switch">
+                    <div class="inspector-single-rect"></div>
+                  </div>
+                  <div class="inspector-skybox-label">
+                    Skybox
+                  </div>
+                </div>
+                <div class="inspector-viewport">
+                  <div class="inspector-title x-title">VIEWPORT</div>
+                  <div class="inspector-viewport-toggle-button">
+                    <div data-val="3d">3D</div>
+                    <div data-val="3d+2d">3D+2D</div>
+                    <div data-val="2d">2D</div>
+                  </div>
+                </div>
+                
+  
+                <div class="inspector-material-channels">
+                  <div class="inspector-title x-title">MATERIAL CHANNELS</div>
+                  <div class="inspector-material-channels-inner">
+                    <div class="base-color" data-val="standar"><span>Standar</span></div>
+                    <div class="base-color" data-val="base-color"><span>Base Color</span></div>
+                    <div class="emission" data-val="emission"><span>Emission</span></div>
+                    <div class="bump-map" data-val="bump-map"><span>Bump Map</span></div>
+                    <div class="normal" data-val="normal"><span>normal</span></div>
+                    <div class="opacity" data-val="opacity"><span>opacity</span></div>
+                    <div class="ao-map" data-val="ao-map"><span>Ao Map</span></div>
+                    <div class="lightmap" data-val="lightmap">LightMap</div>
+                  </div>
+                </div>
+                <div class="inspector-geometry">
+                  <div class="inspector-title x-title">GEOMETRY</div>
+                  <div class="inspector-geometry-inner">
+                    <div class="matcap" data-val="matcap"><span>Matcap</span></div>
+                    <div class="wireframe"  data-val="wireframe"><span>Wireframe</span></div>
+                    <div class="vertex-normals" data-val="vertex-normals"><span>Vertex Normals</span></div>
+                    <div class="uv" data-val="uv"><span>Uv</span></div>
+                  </div>
+                </div>
+              </div>
+      
+            </section>
+            
+            <section class="general-controls"></section>
+          </section>
+
+        </section>
+
+        <section class="webgl-stage-loading" >
+          <div class="webgl-stage-loading-poster" style="background-image:url(${this.param.poster})"></div>
+          <div class="webgl-stage-loading-inner">
+            <div class="webgl-stage-loading-text">Loading 3D Model</div>
+            <div class="webgl-stage-loading-bar">
+              <span class="webgl-stage-loading-rect"></span>
+            </div>
+          </div>
+        </section>`
   },
   progress(prop,fn){
 
