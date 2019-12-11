@@ -1,7 +1,15 @@
 
-import * as THREE from './build/three.module.js';
-import { OrbitControls } from './examples/jsm/controls/OrbitControls.js';
-import { FBXLoader } from './examples/jsm/loaders/FBXLoader.js';
+// import * as THREE from './build/three.module.js';
+
+// import { OrbitControls } from './examples/jsm/controls/OrbitControls.js';
+// import { FBXLoader } from './examples/jsm/loaders/FBXLoader.js';
+
+const OrbitControls = THREE.OrbitControls
+const FBXLoader = THREE.FBXLoader
+
+const TWEEN = require('@tweenjs/tween.js').default
+
+
 // import { GUI } from './examples/jsm/libs/dat.gui.module.js';
 import './index.less'
 
@@ -207,7 +215,14 @@ export default {
 			this.$el = $el
 			
 			camera = new THREE.PerspectiveCamera(50, this.$el.offsetWidth / this.$el.offsetHeight, 1, 20000)
-			camera.position.set(100, 200, 300)
+
+			this.camera_old_po = new THREE.Vector3(100,200,300)
+
+			// camera.position.set(100, 200, 300)
+			// camera.position.set(100,200, 300)
+			//camera.position.set(0,0, 300)
+			//camera.lookAt(new THREE.Vector3(0,1,-1))
+
 			scene = new THREE.Scene()
 			scene.background = new THREE.Color(0xa0a0a0)
 
@@ -260,8 +275,75 @@ export default {
 				this.drawMaterialMode('standard')
 
 				scene.add(this.object)
+				// {
+				// 	let bbox = new THREE.Box3().setFromObject(this.object)
+				// 	bbox.max.sub(bbox.min)
+				// 	let maxLength = Math.max(bbox.max.x,bbox.max.y,bbox.max.z)
+				// 	console.log(bbox,maxLength)
 
+
+				// }
+			
 				this.object.scale.set(this.scale, this.scale, this.scale)
+				
+			
+
+				{
+					let bbox = new THREE.Box3().setFromObject(this.object)
+					bbox.max.sub(bbox.min)
+					let maxLength = Math.max(bbox.max.x,bbox.max.y,bbox.max.z)
+					//console.log(bbox,maxLength)
+
+					let camera_old_po = this.object.position.clone().add(new THREE.Vector3(60,bbox.max.y,maxLength*1.3))
+					camera.position.copy( 
+						camera_old_po.clone()
+					)
+					this.camera_old_po = camera_old_po
+
+
+					this.camera_lookat = 	this.object.position.clone().add(new THREE.Vector3(0,bbox.max.y*.5,0))
+					
+					camera.lookAt(
+						this.camera_lookat.clone()
+					)
+
+			
+
+					new TWEEN.Tween(	{t:0})
+					.to({t:1},1666)
+					.easing(TWEEN.Easing.Quadratic.InOut)
+					.onUpdate((prop)=>{
+						//console.log(prop)
+
+						let dx = -1000
+						let dy = 100
+						let dz = 1500
+						
+						let x = (this.camera_old_po.x+dx)-prop.t*dx
+						let y = (this.camera_old_po.y+dy)-prop.t*dy
+						let z = (this.camera_old_po.z+dz)-prop.t*dz
+
+						// this.camera.lookAt(this.object.position.clone().add(new THREE.Vector3(0,120,0)))
+
+						this.camera.lookAt(this.camera_lookat )
+						this.camera.position.copy(new THREE.Vector3(x, y,z ))
+					})
+					.onComplete(()=>{
+						controls = new OrbitControls(camera, renderer.domElement)
+						controls.mouseButtons = {
+							LEFT: THREE.MOUSE.ROTATE,
+							MIDDLE: THREE.MOUSE.PAN,
+							RIGHT: THREE.MOUSE.PAN
+						}
+						controls.screenSpacePanning = true
+						controls.target.set(this.camera_lookat.x,this.camera_lookat.y,this.camera_lookat.z)
+						controls.update();
+						controls.saveState();
+					})
+					.start()
+					//console.log(this.camera.position)
+					//this.camera.position.copy(new THREE.Vector3(0,0,150))
+				}
 			},
 				 (xhr)=> {
 					console.log((xhr.loaded / xhr.total * 100) + "% loaded")
@@ -290,16 +372,17 @@ export default {
 				outline:'none'
 			})
 
-			controls = new OrbitControls(camera, renderer.domElement)
-			controls.mouseButtons = {
-				LEFT: THREE.MOUSE.ROTATE,
-				MIDDLE: THREE.MOUSE.PAN,
-				RIGHT: THREE.MOUSE.PAN
-			}
-			controls.screenSpacePanning = true;
-			controls.target.set(0, 100, 0);
-			controls.update();
-			controls.saveState();
+			// controls = new OrbitControls(camera, renderer.domElement)
+			// controls.mouseButtons = {
+			// 	LEFT: THREE.MOUSE.ROTATE,
+			// 	MIDDLE: THREE.MOUSE.PAN,
+			// 	RIGHT: THREE.MOUSE.PAN
+			// }
+			// controls.screenSpacePanning = true;
+			// controls.target.set(0, 100, 0);
+			// controls.target.set(0, 0, 0);
+			// controls.update();
+			// controls.saveState();
 			window.addEventListener('resize', ()=>{
 				this.resize()
 			}, false)
@@ -323,6 +406,7 @@ export default {
 		function animate() {
 			requestAnimationFrame(animate)
 			renderer.render(scene, camera)
+			TWEEN.update()
 			//stats.update()
 
 		}
@@ -334,7 +418,6 @@ export default {
 		require('./cubemap/px.png')
 		require('./cubemap/py.png')
 		require('./cubemap/pz.png')
-
 
 		Promise.all([
 			this.getCanvasTexture(require('./matcap.jpeg')),
@@ -554,7 +637,7 @@ export default {
 				// 	normalMap: material.normalMap
 				// })
 
-				this.textures['matcap']['aabbbccc'] = this.matcap_map
+				//this.textures['matcap']['aabbbccc'] = this.matcap_maps
 
 				this.textures['uv']['aabbbccc'] = this.uvchecker_map
 			})

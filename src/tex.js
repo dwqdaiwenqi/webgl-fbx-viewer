@@ -1,6 +1,8 @@
-import * as THREE from './cxy/build/three.module.js'
-import { OrbitControls } from './cxy/examples/jsm/controls/OrbitControls.js'
+// import * as THREE from './cxy/build/three.module.js'
+// import { OrbitControls } from './cxy/examples/jsm/controls/OrbitControls.js'
 import {GUI} from 'dat.gui'
+
+const OrbitControls = THREE.OrbitControls
 
 import './tex.less'
 const MaterialSelect = ()=>{

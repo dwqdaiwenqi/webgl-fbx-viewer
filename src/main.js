@@ -153,7 +153,7 @@ export default {
                 <div class="inspector-material-channels">
                   <div class="inspector-title x-title">MATERIAL CHANNELS</div>
                   <div class="inspector-material-channels-inner">
-                    <div class="base-color" data-val="standar"><span>Standar</span></div>
+                    <div class="base-color" data-val="standard"><span>Standar</span></div>
                     <div class="base-color" data-val="base-color"><span>Base Color</span></div>
                     <div class="emission" data-val="emission"><span>Emission</span></div>
                     <div class="bump-map" data-val="bump-map"><span>Bump Map</span></div>
@@ -182,7 +182,7 @@ export default {
         </section>
 
         <section class="webgl-stage-loading" >
-          <div class="webgl-stage-loading-poster" style="background-image:url(${this.param.poster})"></div>
+          <div class="webgl-stage-loading-poster" style="background-color:#eee;background-image:url(${this.param.poster})"></div>
           <div class="webgl-stage-loading-inner">
             <div class="webgl-stage-loading-text">Loading 3D Model</div>
             <div class="webgl-stage-loading-bar">

@@ -2,7 +2,6 @@ import { EventEmitter } from 'events'
 
 // import { GUI } from './cxy/examples/jsm/libs/dat.gui.module.js';
 import {GUI} from 'dat.gui'
-import { TetrahedronGeometry } from './cxy/build/three.module.js';
 const Select = ($el,active_cls)=>{
   var that = {
     $el: typeof $el==='string'? [...document.querySelectorAll($el)]:[$el],
