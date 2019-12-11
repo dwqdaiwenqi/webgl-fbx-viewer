@@ -44,11 +44,12 @@ module.exports = {
         test: /\.(png|jpg|jpeg|gif|webp)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: 'url-loader',
             options: {
-              publicPath:''
-              ,name :'img/[name].[ext]?[hash:6]'
-
+              publicPath:'',
+              name :'img/[name].[ext]?[hash:6]',
+              // limit: 1024*1024*100
+              limit: 1
             }
           }
         ]

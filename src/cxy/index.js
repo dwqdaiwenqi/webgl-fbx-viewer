@@ -167,9 +167,10 @@ export default {
 					break;
 
 				case this.drawMode.matcap:
-					var texture = new THREE.TextureLoader().load( '//192.168.94.204:7878/models/cxy-model/matcap.jpeg' );
+
+	
 					mat = new THREE.MeshMatcapMaterial({
-						matcap: texture,
+						matcap:  this.matcap_map,
 						normalMap: oldMat.normalMap,
 					})
 					// var texture = new THREE.TextureLoader().load( '//192.168.94.204:7878/models/cxy-model/matcap.jpeg' )
@@ -187,9 +188,10 @@ export default {
 				case this.drawMode.uv:
 
 					
-					var texture = new THREE.TextureLoader().load( '//192.168.94.204:7878/models/cxy-model/UVChecker.png' );
+					//var texture = new THREE.TextureLoader().load( '//192.168.94.204:7878/models/cxy-model/UVChecker.png' );
+					//console.log(this.uvchecker_map)
 					mat = new THREE.MeshBasicMaterial({
-						map: texture
+						map: this.uvchecker_map
 					})
 					break;
 			}
@@ -229,7 +231,7 @@ export default {
 
 			var loader = new THREE.CubeTextureLoader()
 
-			loader.setPath('//192.168.94.204:7878/models/cxy-model/cubemap/')
+			loader.setPath('./img/')
 
 			textureCube = loader.load( [
 				'px.png', 'nx.png',
@@ -242,6 +244,13 @@ export default {
 			this.textureCube = textureCube
 
 			scene.add(new THREE.AmbientLight(0x222222))
+
+
+			// getTexture(require('./c.jpg').default).then(texture=>{
+			// 	console.log(texture)
+			// })
+
+
 
 			loader = new FBXLoader()
 			loader.load(this.param.src,  (object)=> {
@@ -299,7 +308,7 @@ export default {
 			//container.appendChild(stats.dom);
 			this.renderer = renderer
 			
-			document.addEventListener("keydown", keyListen, false);
+			document.addEventListener("keydown", keyListen, false)
 		}
 
 		function keyListen(event) {
@@ -318,8 +327,38 @@ export default {
 
 		}
 
-		init.call(this)
-		animate();
+
+		require('./cubemap/nx.png')
+		require('./cubemap/ny.png')
+		require('./cubemap/nz.png')
+		require('./cubemap/px.png')
+		require('./cubemap/py.png')
+		require('./cubemap/pz.png')
+
+
+		Promise.all([
+			this.getCanvasTexture(require('./matcap.jpeg')),
+			this.getCanvasTexture(require('./UVChecker.png'))
+		]).then(res=>{
+			console.log(res)
+			this.matcap_map = res[0]
+			this.uvchecker_map = res[1]
+
+			init.call(this)
+			animate()
+			
+		})
+
+		// this.getCanvasTexture(require('./matcap.jpeg').default).then(texture=>{
+			
+		// 	this.matcap_map = texture
+
+			// init.call(this)
+			// animate()
+		// })
+
+
+		
 	},
 	drawMaterialMode(mode='standard'){
 
@@ -424,6 +463,31 @@ export default {
 		})
 
 	},
+	getCanvasTexture(src){
+		return new Promise(resolve=>{
+			var img = document.createElement('img')
+			img.onload = ()=>{
+				let $cv = document.createElement('canvas')
+				$cv.width = img.width
+				$cv.height = img.height
+				let c = $cv.getContext('2d')
+				c.drawImage(img,0,0,$cv.width,$cv.height)
+
+				//document.body.appendChild($cv)
+				let texture = new THREE.CanvasTexture($cv)
+
+				resolve(texture)
+
+				// let plane = new THREE.Mesh(
+				// 	new THREE.PlaneGeometry(80,80,10,10),
+				// 	new THREE.MeshBasicMaterial({map:texture})
+				// )
+				// scene.add(plane)
+			}
+			img.src =src
+		})
+		
+	},
 	onProgress(fn,fn2){
 		this.handle_progress = fn
 		this.handle_complete = fn2
@@ -490,9 +554,9 @@ export default {
 				// 	normalMap: material.normalMap
 				// })
 
-				// this.textures['matcap']['aabbbccc'] = new THREE.TextureLoader().load('//192.168.94.204:7878/models/cxy-model/matcap.jpeg')
+				this.textures['matcap']['aabbbccc'] = this.matcap_map
 
-				this.textures['uv']['aabbbccc'] = new THREE.TextureLoader().load( '//192.168.94.204:7878/models/cxy-model/UVChecker.png' )
+				this.textures['uv']['aabbbccc'] = this.uvchecker_map
 			})
 
 		})

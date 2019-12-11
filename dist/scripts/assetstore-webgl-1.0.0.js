@@ -4031,6 +4031,17 @@ module.exports = function (css) {
 
 /***/ }),
 
+/***/ "./src/cxy/UVChecker.png":
+/*!*******************************!*\
+  !*** ./src/cxy/UVChecker.png ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/UVChecker.png?9d678c";
+
+/***/ }),
+
 /***/ "./src/cxy/build/three.module.js":
 /*!***************************************!*\
   !*** ./src/cxy/build/three.module.js ***!
@@ -7747,6 +7758,72 @@ function CanvasRenderer(){console.error('THREE.CanvasRenderer has been removed')
 function JSONLoader(){console.error('THREE.JSONLoader has been removed.');}//
 var SceneUtils={createMultiMaterialObject:function createMultiMaterialObject()/* geometry, materials */{console.error('THREE.SceneUtils has been moved to /examples/js/utils/SceneUtils.js');},detach:function detach()/* child, parent, scene */{console.error('THREE.SceneUtils has been moved to /examples/js/utils/SceneUtils.js');},attach:function attach()/* child, scene, parent */{console.error('THREE.SceneUtils has been moved to /examples/js/utils/SceneUtils.js');}};//
 function LensFlare(){console.error('THREE.LensFlare has been moved to /examples/js/objects/Lensflare.js');}if(typeof __THREE_DEVTOOLS__!=='undefined'){/* eslint-disable no-undef */__THREE_DEVTOOLS__.dispatchEvent(new CustomEvent('register',{detail:{revision:REVISION}}));/* eslint-enable no-undef */}
+
+/***/ }),
+
+/***/ "./src/cxy/cubemap/nx.png":
+/*!********************************!*\
+  !*** ./src/cxy/cubemap/nx.png ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/nx.png?a136eb";
+
+/***/ }),
+
+/***/ "./src/cxy/cubemap/ny.png":
+/*!********************************!*\
+  !*** ./src/cxy/cubemap/ny.png ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/ny.png?ad4da9";
+
+/***/ }),
+
+/***/ "./src/cxy/cubemap/nz.png":
+/*!********************************!*\
+  !*** ./src/cxy/cubemap/nz.png ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/nz.png?758f84";
+
+/***/ }),
+
+/***/ "./src/cxy/cubemap/px.png":
+/*!********************************!*\
+  !*** ./src/cxy/cubemap/px.png ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/px.png?eb2180";
+
+/***/ }),
+
+/***/ "./src/cxy/cubemap/py.png":
+/*!********************************!*\
+  !*** ./src/cxy/cubemap/py.png ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/py.png?33231f";
+
+/***/ }),
+
+/***/ "./src/cxy/cubemap/pz.png":
+/*!********************************!*\
+  !*** ./src/cxy/cubemap/pz.png ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/pz.png?aecb91";
 
 /***/ }),
 
@@ -12537,9 +12614,8 @@ var switchMaterial, mapColor, initStandardMat;
           break;
 
         case this.drawMode.matcap:
-          var texture = new _build_three_module_js__WEBPACK_IMPORTED_MODULE_1__["TextureLoader"]().load('//192.168.94.204:7878/models/cxy-model/matcap.jpeg');
           mat = new _build_three_module_js__WEBPACK_IMPORTED_MODULE_1__["MeshMatcapMaterial"]({
-            matcap: texture,
+            matcap: this.matcap_map,
             normalMap: oldMat.normalMap
           }); // var texture = new THREE.TextureLoader().load( '//192.168.94.204:7878/models/cxy-model/matcap.jpeg' )
           // mat = new THREE.MeshBasicMaterial({
@@ -12555,9 +12631,10 @@ var switchMaterial, mapColor, initStandardMat;
           break;
 
         case this.drawMode.uv:
-          var texture = new _build_three_module_js__WEBPACK_IMPORTED_MODULE_1__["TextureLoader"]().load('//192.168.94.204:7878/models/cxy-model/UVChecker.png');
+          //var texture = new THREE.TextureLoader().load( '//192.168.94.204:7878/models/cxy-model/UVChecker.png' );
+          //console.log(this.uvchecker_map)
           mat = new _build_three_module_js__WEBPACK_IMPORTED_MODULE_1__["MeshBasicMaterial"]({
-            map: texture
+            map: this.uvchecker_map
           });
           break;
       }
@@ -12591,11 +12668,14 @@ var switchMaterial, mapColor, initStandardMat;
       light = new _build_three_module_js__WEBPACK_IMPORTED_MODULE_1__["HemisphereLight"](0xffffbb, 0x080820, 1);
       scene.add(light);
       var loader = new _build_three_module_js__WEBPACK_IMPORTED_MODULE_1__["CubeTextureLoader"]();
-      loader.setPath('//192.168.94.204:7878/models/cxy-model/cubemap/');
+      loader.setPath('./img/');
       textureCube = loader.load(['px.png', 'nx.png', 'py.png', 'ny.png', 'pz.png', 'nz.png']);
       scene.background = textureCube;
       this.textureCube = textureCube;
-      scene.add(new _build_three_module_js__WEBPACK_IMPORTED_MODULE_1__["AmbientLight"](0x222222));
+      scene.add(new _build_three_module_js__WEBPACK_IMPORTED_MODULE_1__["AmbientLight"](0x222222)); // getTexture(require('./c.jpg').default).then(texture=>{
+      // 	console.log(texture)
+      // })
+
       loader = new _examples_jsm_loaders_FBXLoader_js__WEBPACK_IMPORTED_MODULE_3__["FBXLoader"]();
       loader.load(this.param.src, function (object) {
         _this2.object = object;
@@ -12663,8 +12743,29 @@ var switchMaterial, mapColor, initStandardMat;
       renderer.render(scene, camera); //stats.update()
     }
 
-    init.call(this);
-    animate();
+    __webpack_require__(/*! ./cubemap/nx.png */ "./src/cxy/cubemap/nx.png");
+
+    __webpack_require__(/*! ./cubemap/ny.png */ "./src/cxy/cubemap/ny.png");
+
+    __webpack_require__(/*! ./cubemap/nz.png */ "./src/cxy/cubemap/nz.png");
+
+    __webpack_require__(/*! ./cubemap/px.png */ "./src/cxy/cubemap/px.png");
+
+    __webpack_require__(/*! ./cubemap/py.png */ "./src/cxy/cubemap/py.png");
+
+    __webpack_require__(/*! ./cubemap/pz.png */ "./src/cxy/cubemap/pz.png");
+
+    Promise.all([this.getCanvasTexture(__webpack_require__(/*! ./matcap.jpeg */ "./src/cxy/matcap.jpeg")), this.getCanvasTexture(__webpack_require__(/*! ./UVChecker.png */ "./src/cxy/UVChecker.png"))]).then(function (res) {
+      console.log(res);
+      _this.matcap_map = res[0];
+      _this.uvchecker_map = res[1];
+      init.call(_this);
+      animate();
+    }); // this.getCanvasTexture(require('./matcap.jpeg').default).then(texture=>{
+    // 	this.matcap_map = texture
+    // init.call(this)
+    // animate()
+    // })
   },
   drawMaterialMode: function drawMaterialMode() {
     var _this3 = this;
@@ -12757,6 +12858,28 @@ var switchMaterial, mapColor, initStandardMat;
       }
     });
   },
+  getCanvasTexture: function getCanvasTexture(src) {
+    return new Promise(function (resolve) {
+      var img = document.createElement('img');
+
+      img.onload = function () {
+        var $cv = document.createElement('canvas');
+        $cv.width = img.width;
+        $cv.height = img.height;
+        var c = $cv.getContext('2d');
+        c.drawImage(img, 0, 0, $cv.width, $cv.height); //document.body.appendChild($cv)
+
+        var texture = new _build_three_module_js__WEBPACK_IMPORTED_MODULE_1__["CanvasTexture"]($cv);
+        resolve(texture); // let plane = new THREE.Mesh(
+        // 	new THREE.PlaneGeometry(80,80,10,10),
+        // 	new THREE.MeshBasicMaterial({map:texture})
+        // )
+        // scene.add(plane)
+      };
+
+      img.src = src;
+    });
+  },
   onProgress: function onProgress(fn, fn2) {
     this.handle_progress = fn;
     this.handle_complete = fn2;
@@ -12819,10 +12942,10 @@ var switchMaterial, mapColor, initStandardMat;
         // 	matcap: new THREE.TextureLoader().load('//192.168.94.204:7878/models/cxy-model/matcap.jpeg'),
         // 	normalMap: material.normalMap
         // })
-        // this.textures['matcap']['aabbbccc'] = new THREE.TextureLoader().load('//192.168.94.204:7878/models/cxy-model/matcap.jpeg')
 
 
-        _this4.textures['uv']['aabbbccc'] = new _build_three_module_js__WEBPACK_IMPORTED_MODULE_1__["TextureLoader"]().load('//192.168.94.204:7878/models/cxy-model/UVChecker.png');
+        _this4.textures['matcap']['aabbbccc'] = _this4.matcap_map;
+        _this4.textures['uv']['aabbbccc'] = _this4.uvchecker_map;
       });
     }); //console.log('textures:', this.textures)
   },
@@ -12937,6 +13060,17 @@ var update = __webpack_require__(/*! ../../node_modules/_style-loader@0.23.1@sty
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
+
+/***/ }),
+
+/***/ "./src/cxy/matcap.jpeg":
+/*!*****************************!*\
+  !*** ./src/cxy/matcap.jpeg ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/matcap.jpeg?6e1e42";
 
 /***/ }),
 

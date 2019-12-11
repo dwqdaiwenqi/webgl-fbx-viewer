@@ -9,7 +9,7 @@
     "dev": "npx webpack --mode development --w",
     "pro": "npx webpack --mode production"
   },
-  "author": "Yohane",
+  "author": "daiwenqi&chenxiyu",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.4.3",
@@ -30,6 +30,7 @@
     "raw-loader": "^0.5.1",
     "recordrtc": "latest",
     "style-loader": "^0.23.1",
+    "url-loader": "^3.0.0",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0"
   },
