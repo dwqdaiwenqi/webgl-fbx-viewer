@@ -112,7 +112,6 @@ export default function Menu($parent){
     // opacity
     // ao-map
     // lightmap
-    
    
     let mp ={
       'Standard': 'standard',

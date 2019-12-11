@@ -358,7 +358,7 @@ var urlEscape = __webpack_require__(/*! ../../node_modules/_css-loader@2.1.1@css
 var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__(/*! ../down-small.png */ "./src/down-small.png"));
 
 // Module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  border: none;\n}\n.dg .c input[type=text] {\n  width: 96%;\n}\n.webgl-gui {\n  height: 100%;\n}\n.style-15::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);\n  border-radius: 10px;\n}\n.style-15::-webkit-scrollbar {\n  width: 7px;\n}\n.style-15::-webkit-scrollbar-thumb {\n  border-radius: 15px;\n  background-color: #3c3c3c;\n}\n.webgl-menu {\n  width: 200px;\n  box-sizing: border-box;\n  position: absolute;\n  left: 0;\n  top: 0;\n  color: white;\n  height: 100%;\n  cursor: pointer;\n  font-size: 14px;\n}\n.webgl-menu .x-title {\n  color: #888;\n  margin: 5px 0;\n}\n.webgl-menu .color-transparent {\n  background-color: black;\n}\n.switch-active {\n  background-color: #1caad9;\n}\n.wireframe--active {\n  border: 2px solid white;\n}\n.opt--active {\n  background-color: #1caad9;\n}\n.inspector-material-channels-inner > div {\n  padding: 5px 0;\n  padding-left: 10px;\n  margin: 3px 0;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n.inspector-geometry-inner > div {\n  padding: 5px 0;\n  padding-left: 10px;\n  margin: 3px 0;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n.webgl-menu > header {\n  height: 30px;\n  background-color: rgba(0, 0, 0, 0.7);\n  box-sizing: border-box;\n  padding: 0 10px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n}\n.webgl-menu > header .icon_down {\n  display: block;\n  width: 20px;\n  height: 20px;\n  background: url(" + ___CSS_LOADER_URL___0___ + ") no-repeat;\n  background-size: cover;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n.webgl-menu > header .icon_down--active {\n  -webkit-transform: rotateZ(180deg);\n          transform: rotateZ(180deg);\n}\n.webgl-menu > .inspector-modes {\n  height: calc(100% - 30px);\n  overflow-y: scroll;\n  background-color: rgba(0, 0, 0, 0.7);\n  box-sizing: border-box;\n  padding: 0 10px;\n}\n.inspector-modes > div {\n  margin: 10px 0;\n}\n.webgl-stage-scene {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n}\n.webgl-stage-scene > canvas {\n  cursor: -webkit-grab;\n  cursor: grab;\n}\n.webgl-stage-texture {\n  position: absolute;\n  left: 0;\n  top: 0;\n  height: 100%;\n  display: none;\n}\n#webgl-stage canvas {\n  outline: none;\n}\n.webgl-gui {\n  position: absolute;\n  left: 0;\n  top: 0;\n}\n.inspector-wireframe-color {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  justify-content: space-around;\n}\n.inspector-wireframe-color > div {\n  width: 21px;\n  height: 21px;\n  border-radius: 4px;\n  cursor: pointer;\n  box-sizing: border-box;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-wireframe-color > div:hover {\n  border: 2px solid white;\n}\n.inspector-viewport .inspector-viewport-toggle-button {\n  display: -webkit-box;\n  display: flex;\n  height: 27px;\n  border-radius: 5px;\n  background: #0d0d0d;\n  overflow: hidden;\n}\n.inspector-viewport .inspector-viewport-toggle-button > div {\n  width: 33%;\n  cursor: pointer;\n  text-align: center;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n          justify-content: center;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n.inspector-skybox {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  color: #ccc;\n}\n.inspector-skybox .inspector-skybox-label {\n  margin-left: 10px;\n}\n.inspector-skybox .inspector-skybox-switch {\n  width: 42px;\n  height: 23px;\n  border-radius: 5px;\n  background: #ccc;\n  cursor: pointer;\n  position: relative;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-skybox .inspector-skybox-switch--active {\n  background: #1caad9;\n}\n.inspector-skybox .inspector-skybox-switch--active .inspector-single-rect {\n  border-radius: 4px;\n  width: 15px;\n  height: 100%;\n  background: white;\n  position: absolute;\n  top: 0;\n  left: 70%;\n}\n.inspector-skybox .inspector-single-rect {\n  border-radius: 4px;\n  width: 15px;\n  height: 100%;\n  background: white;\n  position: absolute;\n  left: 0;\n  top: 0;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-single-sided {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  color: #ccc;\n}\n.inspector-single-sided .inspector-single-sided-label {\n  margin-left: 10px;\n}\n.inspector-single-sided .inspector-single-sided-switch {\n  width: 42px;\n  height: 23px;\n  border-radius: 5px;\n  background: #ccc;\n  cursor: pointer;\n  position: relative;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-single-sided .inspector-single-sided-switch--active {\n  background: #1caad9;\n}\n.inspector-single-sided .inspector-single-sided-switch--active .inspector-single-rect {\n  border-radius: 4px;\n  width: 15px;\n  height: 100%;\n  background: white;\n  position: absolute;\n  top: 0;\n  left: 70%;\n}\n.inspector-single-sided .inspector-single-rect {\n  border-radius: 4px;\n  width: 15px;\n  height: 100%;\n  background: white;\n  position: absolute;\n  left: 0;\n  top: 0;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-render-inner > div {\n  cursor: pointer;\n}\n.inspector-material-channels > div {\n  cursor: pointer;\n}\n.inspector-geometry-inner > div {\n  cursor: pointer;\n}\n.inspector-uv-inner > div {\n  cursor: pointer;\n}\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  border: none;\n}\n.dg .c input[type=text] {\n  width: 96%;\n}\n.webgl-gui {\n  height: 100%;\n}\n.style-15::-webkit-scrollbar-track {\n  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);\n  border-radius: 10px;\n}\n.style-15::-webkit-scrollbar {\n  width: 7px;\n}\n.style-15::-webkit-scrollbar-thumb {\n  border-radius: 15px;\n  background-color: #3c3c3c;\n}\n.webgl-menu {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  width: 200px;\n  box-sizing: border-box;\n  position: absolute;\n  left: 0;\n  top: 0;\n  color: white;\n  height: 100%;\n  font-size: 14px;\n}\n.webgl-menu .x-title {\n  color: #888;\n  margin: 5px 0;\n}\n.webgl-menu .color-transparent {\n  background-color: black;\n}\n.switch-active {\n  background-color: #1caad9;\n}\n.wireframe--active {\n  border: 2px solid white;\n}\n.opt--active {\n  background-color: #1caad9;\n}\n.inspector-material-channels-inner > div {\n  padding: 5px 0;\n  padding-left: 10px;\n  margin: 3px 0;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n.webgl-stage-loading {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  visibility: visible;\n}\n.webgl-stage-loading .webgl-stage-loading-poster {\n  width: 100%;\n  height: 100%;\n  background-repeat: no-repeat;\n  background-size: cover;\n  -webkit-filter: brightness(0.4);\n          filter: brightness(0.4);\n}\n.webgl-stage-loading .webgl-stage-loading-inner {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n          justify-content: center;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n}\n.webgl-stage-loading .webgl-stage-loading-text {\n  color: #e0e0e0;\n  font-weight: 400;\n}\n.webgl-stage-loading .webgl-stage-loading-bar {\n  width: 230px;\n  height: 10px;\n  height: 4px;\n  border-radius: 2px;\n  background: #797979;\n  margin: 15px 0;\n  overflow: hidden;\n}\n.webgl-stage-loading .webgl-stage-loading-rect {\n  display: block;\n  height: 100%;\n  background: #1caad9;\n  width: 0%;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n@-webkit-keyframes xhide {\n  0% {\n    -webkit-filter: opacity(1);\n            filter: opacity(1);\n    visibility: visible;\n  }\n  100% {\n    -webkit-filter: opacity(0);\n            filter: opacity(0);\n    visibility: hidden;\n  }\n}\n@keyframes xhide {\n  0% {\n    -webkit-filter: opacity(1);\n            filter: opacity(1);\n    visibility: visible;\n  }\n  100% {\n    -webkit-filter: opacity(0);\n            filter: opacity(0);\n    visibility: hidden;\n  }\n}\n.webgl-stage-loading--hide {\n  -webkit-animation: xhide 1s 0.7s forwards;\n          animation: xhide 1s 0.7s forwards;\n}\n.inspector-geometry-inner > div {\n  padding: 5px 0;\n  padding-left: 10px;\n  margin: 3px 0;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n.webgl-menu > header {\n  height: 30px;\n  background-color: rgba(0, 0, 0, 0.7);\n  box-sizing: border-box;\n  padding: 0 10px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  cursor: pointer;\n}\n.webgl-menu > header .icon_down {\n  display: block;\n  width: 20px;\n  height: 20px;\n  background: url(" + ___CSS_LOADER_URL___0___ + ") no-repeat;\n  background-size: cover;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n.webgl-menu > header .icon_down--active {\n  -webkit-transform: rotateZ(180deg);\n          transform: rotateZ(180deg);\n}\n.webgl-menu > .inspector-modes {\n  height: calc(100% - 30px);\n  overflow-y: scroll;\n  background-color: rgba(0, 0, 0, 0.7);\n  box-sizing: border-box;\n  padding: 0 10px;\n}\n.inspector-modes > div {\n  margin: 10px 0;\n}\n.webgl-stage-scene {\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n}\n.webgl-stage-scene > canvas {\n  cursor: -webkit-grab;\n  cursor: grab;\n}\n.webgl-stage-texture {\n  position: absolute;\n  left: 0;\n  top: 0;\n  height: 100%;\n  display: none;\n}\n#webgl-stage canvas {\n  outline: none;\n}\n.webgl-gui {\n  position: absolute;\n  left: 0;\n  top: 0;\n}\n.inspector-wireframe-color {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  justify-content: space-around;\n}\n.inspector-wireframe-color > div {\n  width: 21px;\n  height: 21px;\n  border-radius: 4px;\n  cursor: pointer;\n  box-sizing: border-box;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-wireframe-color > div:hover {\n  border: 2px solid white;\n}\n.inspector-viewport .inspector-viewport-toggle-button {\n  display: -webkit-box;\n  display: flex;\n  height: 27px;\n  border-radius: 5px;\n  background: #0d0d0d;\n  overflow: hidden;\n}\n.inspector-viewport .inspector-viewport-toggle-button > div {\n  width: 33.333333%;\n  text-align: center;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n          justify-content: center;\n  -webkit-transition: 0.3s;\n  transition: 0.3s;\n}\n.inspector-skybox {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  color: #ccc;\n}\n.inspector-skybox .inspector-skybox-label {\n  margin-left: 10px;\n}\n.inspector-skybox .inspector-skybox-switch {\n  width: 42px;\n  height: 23px;\n  border-radius: 5px;\n  background: #ccc;\n  cursor: pointer;\n  position: relative;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-skybox .inspector-skybox-switch--active {\n  background: #1caad9;\n}\n.inspector-skybox .inspector-skybox-switch--active .inspector-single-rect {\n  border-radius: 4px;\n  width: 15px;\n  height: 100%;\n  background: white;\n  position: absolute;\n  top: 0;\n  left: 70%;\n}\n.inspector-skybox .inspector-single-rect {\n  border-radius: 4px;\n  width: 15px;\n  height: 100%;\n  background: white;\n  position: absolute;\n  left: 0;\n  top: 0;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-single-sided {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  color: #ccc;\n}\n.inspector-single-sided .inspector-single-sided-label {\n  margin-left: 10px;\n}\n.inspector-single-sided .inspector-single-sided-switch {\n  width: 42px;\n  height: 23px;\n  border-radius: 5px;\n  background: #ccc;\n  cursor: pointer;\n  position: relative;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-single-sided .inspector-single-sided-switch--active {\n  background: #1caad9;\n}\n.inspector-single-sided .inspector-single-sided-switch--active .inspector-single-rect {\n  border-radius: 4px;\n  width: 15px;\n  height: 100%;\n  background: white;\n  position: absolute;\n  top: 0;\n  left: 70%;\n}\n.inspector-single-sided .inspector-single-rect {\n  border-radius: 4px;\n  width: 15px;\n  height: 100%;\n  background: white;\n  position: absolute;\n  left: 0;\n  top: 0;\n  -webkit-transition: 0.2s;\n  transition: 0.2s;\n}\n.inspector-render-inner > div {\n  cursor: pointer;\n}\n.inspector-material-channels > div {\n  cursor: pointer;\n}\n.inspector-geometry-inner > div {\n  cursor: pointer;\n}\n.inspector-uv-inner > div {\n  cursor: pointer;\n}\n", ""]);
 
 
 
@@ -374,6 +374,21 @@ exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  border: none;\n}\n.
 exports = module.exports = __webpack_require__(/*! ../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js")(false);
 // Module
 exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n}\n", ""]);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_postcss-loader@3.0.0@postcss-loader/src/index.js?!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/tex.less":
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_postcss-loader@3.0.0@postcss-loader/src??ref--5-2!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/tex.less ***!
+  \**********************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js */ "./node_modules/_css-loader@2.1.1@css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".material-select {\n  position: absolute;\n  width: 200px;\n  height: 41px;\n  left: 0;\n  top: 0;\n}\n", ""]);
 
 
 
@@ -12590,6 +12605,13 @@ var switchMaterial, mapColor, initStandardMat;
         _this2.object.scale.set(_this2.scale, _this2.scale, _this2.scale);
       }, function (xhr) {
         console.log(xhr.loaded / xhr.total * 100 + "% loaded");
+        var n = xhr.loaded / xhr.total * 100;
+
+        _this2.handle_progress(n);
+
+        if (n == 100) {
+          _this2.handle_complete(n);
+        }
       }, function (error) {
         console.log(error);
       });
@@ -12732,6 +12754,10 @@ var switchMaterial, mapColor, initStandardMat;
         }
       }
     });
+  },
+  onProgress: function onProgress(fn, fn2) {
+    this.handle_progress = fn;
+    this.handle_complete = fn2;
   },
   generateTextureMap: function generateTextureMap() {
     var _this4 = this;
@@ -12984,11 +13010,15 @@ __webpack_require__.r(__webpack_exports__);
     this.$el = typeof $el === 'string' ? document.querySelector($el) : $el;
     this.$stage_gl = this.$el.querySelector('.webgl-stage-scene');
     this.$stage_texture = this.$el.querySelector('.webgl-stage-texture');
+    this.$stage_complete = this.$el.querySelector('.webgl-stage-complete');
     var menu = Object(_menu__WEBPACK_IMPORTED_MODULE_1__["default"])(document.querySelector('.webgl-gui'));
     menu.ev.on('wireframe', function (prop) {
       //Gl.setColor(prop.val)
+      //menu.reset()
       console.log('wireframe:', prop);
       _cxy__WEBPACK_IMPORTED_MODULE_2__["default"].setColor(prop.val);
+
+      _this.drawMode('wireframe');
     });
     menu.ev.on('single-sided', function (prop) {
       console.log(prop);
@@ -13025,11 +13055,20 @@ __webpack_require__.r(__webpack_exports__);
       //console.log(prop)
       _this.drawMode(prop.val);
     });
-    _cxy__WEBPACK_IMPORTED_MODULE_2__["default"].init(this.$stage_gl); //console.log(Gl.textures)
+    _cxy__WEBPACK_IMPORTED_MODULE_2__["default"].init(this.$stage_gl);
+    _cxy__WEBPACK_IMPORTED_MODULE_2__["default"].onProgress(function (prop) {
+      // this.progress(prop)
+      _this.$el.querySelector('.webgl-stage-loading-rect').style.width = prop + '%';
+    }, function () {
+      _this.$el.querySelector('.webgl-stage-loading').classList.add('webgl-stage-loading--hide');
+
+      _this.$stage_complete.style.visibility = 'visible';
+    }); //console.log(Gl.textures)
 
     _tex__WEBPACK_IMPORTED_MODULE_3__["default"].init(this.$stage_texture);
     return this;
   },
+  progress: function progress(prop, fn) {},
   scene2d: function scene2d() {
     Object.assign(this.$stage_gl.style, {
       display: 'none'
@@ -13133,9 +13172,10 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
-var Select = function Select($el) {
+var Select = function Select($el, active_cls) {
   var that = {
     $el: typeof $el === 'string' ? _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_1___default()(document.querySelectorAll($el)) : [$el],
+    active_cls: active_cls,
     init: function init() {
       var _this = this;
 
@@ -13149,8 +13189,19 @@ var Select = function Select($el) {
         };
       });
     },
+    select: function select(i) {
+      this.$el[i].classList.add(this.active_cls);
+    },
+    reset: function reset() {
+      var _this2 = this;
+
+      this.$el.forEach(function ($node) {
+        $node.classList.remove(_this2.active_cls);
+      });
+    },
     onChange: function onChange(fn) {
       this.handle_change = fn;
+      return this;
     }
   };
   that.init();
@@ -13162,22 +13213,23 @@ var Switch = function Switch($el, active_cls) {
   var that = {
     $el: typeof $el === 'string' ? _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_1___default()(document.querySelectorAll($el)) : [$el],
     i: 0,
+    active_cls: active_cls,
     init: function init() {
-      var _this2 = this;
+      var _this3 = this;
 
       this.$el.forEach(function ($node) {
         $node.onclick = function () {
-          if (++_this2.i % 2 != 0) {
+          if (++_this3.i % 2 != 0) {
             $node.classList.add(active_cls);
 
-            _this2.handle_change({
+            _this3.handle_change({
               $node: $node,
               val: true
             });
           } else {
             $node.classList.remove(active_cls);
 
-            _this2.handle_change({
+            _this3.handle_change({
               $node: $node,
               val: false
             });
@@ -13190,8 +13242,16 @@ var Switch = function Switch($el, active_cls) {
         this.$el[0].classList.add(active_cls);
       }
     },
+    reset: function reset() {
+      var _this4 = this;
+
+      this.$el.forEach(function ($node) {
+        $node.classList.remove(_this4.active_cls);
+      });
+    },
     onChange: function onChange(fn) {
       this.handle_change = fn;
+      return this;
     }
   };
   that.init();
@@ -13200,7 +13260,13 @@ var Switch = function Switch($el, active_cls) {
 
 function Menu($parent) {
   var that = {
-    ev: new events__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]()
+    ev: new events__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"](),
+    material_select: null,
+    geometry_select: null,
+    reset: function reset() {
+      that.material_select.reset();
+      that.geometry_select.reset();
+    }
   }; // var gui = new GUI()
   // console.log(gui.domElement)
   // Object.assign(gui.domElement.style,{
@@ -13280,6 +13346,9 @@ function Menu($parent) {
 
     Select('.inspector-wireframe-color>div').onChange(function (prop) {
       //console.log(prop.$node, prop.val)
+      that.material_select.reset();
+      that.geometry_select.reset();
+      that.geometry_select.select(1);
       prop.$elements.forEach(function ($node) {
         $node.classList.remove('wireframe--active');
       });
@@ -13287,7 +13356,7 @@ function Menu($parent) {
       that.ev.emit('wireframe', _objectSpread({}, prop));
     }); // viewprot
 
-    Select('.inspector-viewport-toggle-button>div').onChange(function (prop) {
+    Select('.inspector-viewport-toggle-button>div', 'switch-active').onChange(function (prop) {
       //console.log(prop.$node, prop.val)
       // viewport
       prop.$elements.forEach(function ($node) {
@@ -13297,23 +13366,27 @@ function Menu($parent) {
       that.ev.emit('viewport', _objectSpread({}, prop));
     }); //material
 
-    Select('.inspector-material-channels-inner>div').onChange(function (prop) {
+    var material_select = Select('.inspector-material-channels-inner>div', 'opt--active').onChange(function (prop) {
       // console.log(prop.$node, prop.val)
+      geometry_select.reset();
       prop.$elements.forEach(function ($node) {
         $node.classList.remove('opt--active');
       });
       prop.$node.classList.add('opt--active');
       that.ev.emit('material-channels', _objectSpread({}, prop));
-    }); //geometry
+    });
+    that.material_select = material_select; //geometry
 
-    Select('.inspector-geometry-inner>div').onChange(function (prop) {
+    var geometry_select = Select('.inspector-geometry-inner>div', 'opt--active').onChange(function (prop) {
       //console.log(prop.$node, prop.val)
+      material_select.reset();
       prop.$elements.forEach(function ($node) {
         $node.classList.remove('opt--active');
       });
       prop.$node.classList.add('opt--active');
       that.ev.emit('geometry', _objectSpread({}, prop));
-    }); //uv
+    });
+    that.geometry_select = geometry_select; //uv
 
     Select('.inspector-uv-inner>div').onChange(function (prop) {
       console.log(prop.$node, prop.val);
@@ -13358,8 +13431,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cxy_build_three_module_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cxy/build/three.module.js */ "./src/cxy/build/three.module.js");
 /* harmony import */ var _cxy_examples_jsm_controls_OrbitControls_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cxy/examples/jsm/controls/OrbitControls.js */ "./src/cxy/examples/jsm/controls/OrbitControls.js");
 /* harmony import */ var dat_gui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! dat.gui */ "./node_modules/_dat.gui@0.7.6@dat.gui/build/dat.gui.module.js");
+/* harmony import */ var _tex_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tex.less */ "./src/tex.less");
+/* harmony import */ var _tex_less__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_tex_less__WEBPACK_IMPORTED_MODULE_3__);
 
 
+
+
+
+var MaterialSelect = function MaterialSelect() {
+  var that = {
+    init: function init() {
+      this.domElement.className = 'material-select';
+      this.domElement.innerHTML = "\n        <div class=\"material-select-title\"></div>\n        <div class=\"material-select-menu\">\n          <div class=\"material-select-opt\" data-val=\"0\">0</div>\n          <div class=\"material-select-opt\" data-val=\"1\">1</div>\n          <div class=\"material-select-opt\" data-val=\"2\">2</div>\n        </div>\n      ";
+    },
+    domElement: document.createElement('div'),
+    add: function add() {},
+    onChange: function onChange() {}
+  };
+  that.init();
+  return that;
+};
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   init: function init($el) {
@@ -13449,6 +13540,31 @@ __webpack_require__.r(__webpack_exports__);
     }
 
     {
+      // this.gui = MaterialSelect()
+      // Object.assign(this.gui.domElement.style,{
+      //   position: 'absolute',
+      //   right: '0',
+      //   top: '0'
+      // })
+      // this.$el.appendChild(this.gui.domElement)
+      // // let vals = []
+      // textures_arr.forEach((k,i)=>{
+      //   //if(i!=0) return
+      //   // textures[uuid]
+      //   let map = textures[k]
+      //   let name = map.name
+      //   // console.log(map,map.generateMipmaps)
+      //   // console.dir(map.image)
+      //   //console.log(map,name)
+      //   vals.push(i)
+      // })
+      // this.gui.add(  {
+      //   Textures: '0',
+      // }, 'Textures', [...vals] ).onChange(  (val) =>{
+      //  this.planes.forEach(plane=>plane.visible=false)
+      //  this.planes[val].visible = true
+      // })
+      // this.planes[0]&&(this.planes[0].visible = true)
       this.gui = new dat_gui__WEBPACK_IMPORTED_MODULE_2__["GUI"]();
       Object.assign(this.gui.domElement.style, {
         position: 'absolute',
@@ -13495,6 +13611,36 @@ __webpack_require__.r(__webpack_exports__);
   gui: null,
   maps: []
 });
+
+/***/ }),
+
+/***/ "./src/tex.less":
+/*!**********************!*\
+  !*** ./src/tex.less ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!../node_modules/_postcss-loader@3.0.0@postcss-loader/src??ref--5-2!../node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./tex.less */ "./node_modules/_css-loader@2.1.1@css-loader/dist/cjs.js!./node_modules/_postcss-loader@3.0.0@postcss-loader/src/index.js?!./node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js!./src/tex.less");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js */ "./node_modules/_style-loader@0.23.1@style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ })
 

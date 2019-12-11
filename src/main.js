@@ -18,6 +18,7 @@ export default {
 
     this.$stage_gl = this.$el.querySelector('.webgl-stage-scene')
     this.$stage_texture = this.$el.querySelector('.webgl-stage-texture')
+    this.$stage_complete = this.$el.querySelector('.webgl-stage-complete')
 
     let menu = Menu(
       document.querySelector('.webgl-gui')
@@ -25,8 +26,15 @@ export default {
     
     menu.ev.on('wireframe',prop=>{
       //Gl.setColor(prop.val)
+
+      //menu.reset()
+
       console.log('wireframe:', prop)
       Gl.setColor(prop.val)
+
+      this.drawMode('wireframe')
+      
+     
     })
     menu.ev.on('single-sided',prop=>{
       console.log(prop)
@@ -72,10 +80,22 @@ export default {
     })
 
     Gl.init(this.$stage_gl)
+
+    Gl.onProgress(prop=>{
+      // this.progress(prop)
+      this.$el.querySelector('.webgl-stage-loading-rect').style.width = prop+'%'
+    },()=>{
+      this.$el.querySelector('.webgl-stage-loading').classList.add('webgl-stage-loading--hide')
+
+      this.$stage_complete.style.visibility = 'visible'
+    })
     //console.log(Gl.textures)
     Tex.init(this.$stage_texture)
 
     return this
+  },
+  progress(prop,fn){
+
   },
   scene2d(){
     Object.assign(this.$stage_gl.style,{

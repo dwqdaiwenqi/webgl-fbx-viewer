@@ -252,10 +252,17 @@ export default {
 
 				this.object.scale.set(this.scale, this.scale, this.scale)
 			},
-				function (xhr) {
+				 (xhr)=> {
 					console.log((xhr.loaded / xhr.total * 100) + "% loaded")
+
+					let n = xhr.loaded / xhr.total * 100
+					this.handle_progress(n)
+					if(n==100){
+						this.handle_complete(n)
+					}
+					
 				},
-				function (error) {
+				 (error)=> {
 					console.log(error)
 				}
 			)
@@ -414,6 +421,10 @@ export default {
 
 		})
 
+	},
+	onProgress(fn,fn2){
+		this.handle_progress = fn
+		this.handle_complete = fn2
 	},
 	generateTextureMap(){
 

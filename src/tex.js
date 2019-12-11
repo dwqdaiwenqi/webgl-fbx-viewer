@@ -2,6 +2,33 @@ import * as THREE from './cxy/build/three.module.js'
 import { OrbitControls } from './cxy/examples/jsm/controls/OrbitControls.js'
 import {GUI} from 'dat.gui'
 
+import './tex.less'
+const MaterialSelect = ()=>{
+  var that = {
+    init(){
+      this.domElement.className = 'material-select'
+      this.domElement.innerHTML = `
+        <div class="material-select-title"></div>
+        <div class="material-select-menu">
+          <div class="material-select-opt" data-val="0">0</div>
+          <div class="material-select-opt" data-val="1">1</div>
+          <div class="material-select-opt" data-val="2">2</div>
+        </div>
+      `
+
+    },
+    domElement:document.createElement('div'),
+    add(){
+
+    },
+    onChange(){
+
+    }
+  }
+  that.init()
+  return  that
+}
+
 export default {
   init($el){
     this.$el = $el
@@ -112,6 +139,36 @@ export default {
 
     {
       
+      // this.gui = MaterialSelect()
+      // Object.assign(this.gui.domElement.style,{
+      //   position: 'absolute',
+      //   right: '0',
+      //   top: '0'
+      // })
+      // this.$el.appendChild(this.gui.domElement)
+
+      // // let vals = []
+      // textures_arr.forEach((k,i)=>{
+      //   //if(i!=0) return
+      //   // textures[uuid]
+      //   let map = textures[k]
+      //   let name = map.name
+      //   // console.log(map,map.generateMipmaps)
+      //   // console.dir(map.image)
+      //   //console.log(map,name)
+      //   vals.push(i)
+      // })
+  
+      // this.gui.add(  {
+      //   Textures: '0',
+      // }, 'Textures', [...vals] ).onChange(  (val) =>{
+  
+      //  this.planes.forEach(plane=>plane.visible=false)
+      //  this.planes[val].visible = true
+      // })
+
+      // this.planes[0]&&(this.planes[0].visible = true)
+
   
       this.gui = new GUI()
       Object.assign(this.gui.domElement.style,{
@@ -141,7 +198,7 @@ export default {
        this.planes.forEach(plane=>plane.visible=false)
        this.planes[val].visible = true
       })
-      
+
       this.planes[0]&&(this.planes[0].visible = true)
     }
     

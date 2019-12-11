@@ -3,9 +3,10 @@ import { EventEmitter } from 'events'
 // import { GUI } from './cxy/examples/jsm/libs/dat.gui.module.js';
 import {GUI} from 'dat.gui'
 import { TetrahedronGeometry } from './cxy/build/three.module.js';
-const Select = ($el)=>{
+const Select = ($el,active_cls)=>{
   var that = {
     $el: typeof $el==='string'? [...document.querySelectorAll($el)]:[$el],
+    active_cls,
     init(){
       this.$el.forEach($node=>{
       
@@ -20,8 +21,17 @@ const Select = ($el)=>{
        }
       })
     },
+    select(i){
+      this.$el[i].classList.add(this.active_cls)
+    },
+    reset(){
+      this.$el.forEach($node=>{
+        $node.classList.remove(this.active_cls)
+      })
+    },
     onChange(fn){
       this.handle_change = fn
+      return this
     }
   }
   that.init()
@@ -32,6 +42,7 @@ const Switch = ($el,active_cls,b=false)=>{
   var that = {
     $el: typeof $el==='string'? [...document.querySelectorAll($el)]:[$el],
     i:0,
+    active_cls,
     init(){
       this.$el.forEach($node=>{
        
@@ -55,8 +66,14 @@ const Switch = ($el,active_cls,b=false)=>{
         this.$el[0].classList.add(active_cls)
       }
     },
+    reset(){
+      this.$el.forEach($node=>{
+        $node.classList.remove(this.active_cls)
+      })
+    },
     onChange(fn){
       this.handle_change = fn
+      return this
     }
   }
   that.init()
@@ -67,7 +84,13 @@ const Switch = ($el,active_cls,b=false)=>{
 export default function Menu($parent){
  
   var that = {
-    ev : new EventEmitter()
+    ev : new EventEmitter(),
+    material_select:null,
+    geometry_select:null,
+    reset(){
+      that.material_select.reset()
+      that.geometry_select.reset()
+    }
     
   }
 
@@ -171,6 +194,11 @@ export default function Menu($parent){
     // wireframe
     Select('.inspector-wireframe-color>div').onChange(prop=>{
       //console.log(prop.$node, prop.val)
+      that.material_select.reset()
+      that.geometry_select.reset()
+
+      that.geometry_select.select(1)
+
       prop.$elements.forEach($node=>{
         $node.classList.remove('wireframe--active')
       })
@@ -180,7 +208,7 @@ export default function Menu($parent){
     })
 
     // viewprot
-    Select('.inspector-viewport-toggle-button>div').onChange(prop=>{
+    Select('.inspector-viewport-toggle-button>div','switch-active').onChange(prop=>{
       //console.log(prop.$node, prop.val)
       // viewport
       prop.$elements.forEach($node=>{
@@ -192,9 +220,10 @@ export default function Menu($parent){
     })
 
     //material
-    Select('.inspector-material-channels-inner>div').onChange(prop=>{
+    let material_select = Select('.inspector-material-channels-inner>div','opt--active').onChange(prop=>{
       // console.log(prop.$node, prop.val)
 
+      geometry_select.reset()
 
       prop.$elements.forEach($node=>{
         $node.classList.remove('opt--active')
@@ -204,9 +233,14 @@ export default function Menu($parent){
       that.ev.emit('material-channels',{...prop})
     })
 
+    that.material_select = material_select
+
     //geometry
-    Select('.inspector-geometry-inner>div').onChange(prop=>{
+    let geometry_select = Select('.inspector-geometry-inner>div','opt--active').onChange(prop=>{
       //console.log(prop.$node, prop.val)
+
+      material_select.reset()
+
       prop.$elements.forEach($node=>{
         $node.classList.remove('opt--active')
       })
@@ -214,6 +248,9 @@ export default function Menu($parent){
 
       that.ev.emit('geometry',{...prop})
     })
+
+    that.geometry_select = geometry_select
+
 
     //uv
     Select('.inspector-uv-inner>div').onChange(prop=>{
