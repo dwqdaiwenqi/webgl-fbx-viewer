@@ -1,4 +1,4 @@
-﻿# webgl-fbx-viewer
+# webgl-fbx-viewer
 
 一个fbx模型的观察器，包含了模型的各种材质切换展示
        
