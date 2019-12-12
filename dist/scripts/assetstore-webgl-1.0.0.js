@@ -5502,7 +5502,7 @@ var switchMaterial, mapColor, initStandardMat;
     __webpack_require__(/*! ./cubemap/pz.png */ "./src/cxy/cubemap/pz.png");
 
     Promise.all([this.getCanvasTexture(__webpack_require__(/*! ./matcap.jpeg */ "./src/cxy/matcap.jpeg")), this.getCanvasTexture(__webpack_require__(/*! ./UVChecker.png */ "./src/cxy/UVChecker.png"))]).then(function (res) {
-      console.log(res);
+      //console.log(res)
       _this.matcap_map = res[0];
       _this.uvchecker_map = res[1];
       init.call(_this);
@@ -5531,8 +5531,8 @@ var switchMaterial, mapColor, initStandardMat;
     // }else{
     // 	child.__wireframe__ = true
     // }
-
-    console.log('currentDrawMode----------:', this.currentDrawMode, this.mode); // this.object.marterial = new THREE.MeshStandardMaterial({
+    //	console.log('currentDrawMode----------:', this.currentDrawMode,this.mode)
+    // this.object.marterial = new THREE.MeshStandardMaterial({
     // 	color: 0xff00ff,
     // 	roughness: 1.0,
     // 	metalness: 0.0,
@@ -5888,6 +5888,8 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
+console.log("%c webgl-fbx-viewer v1.0.0", "color:aqua;font-size:2rem;");
+console.log("%c ", "background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1576102366375&di=1780b6472bf18365aa24079f2ca64083&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20171230%2F256d738bee7d431faf7df293deedd364.jpeg) no-repeat center;padding-left:80px;padding-bottom: 80px;");
 /* harmony default export */ __webpack_exports__["default"] = ({
   $el: null,
   $stage_gl: null,
@@ -6030,8 +6032,8 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
   },
 
   drawMode: function drawMode(val) {
-    this.currentMode = val;
-    console.log(_cxy__WEBPACK_IMPORTED_MODULE_3__["default"].textures, this.currentMode, this.mode);
+    this.currentMode = val; //console.log(Gl.textures, this.currentMode, this.mode)
+
     _tex__WEBPACK_IMPORTED_MODULE_4__["default"].showTexture(this.currentMode, _cxy__WEBPACK_IMPORTED_MODULE_3__["default"].textures[this.mode]); //Tex.showTexture(this.currentMode, Gl.textures[this.currentMode])
     //debugger
 

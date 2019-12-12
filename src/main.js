@@ -6,6 +6,8 @@ import Gl from './cxy'
 
 import Tex from './tex'
 
+console.log(`%c webgl-fbx-viewer v1.0.0`, "color:aqua;font-size:2rem;");
+console.log("%c ", "background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1576102366375&di=1780b6472bf18365aa24079f2ca64083&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20171230%2F256d738bee7d431faf7df293deedd364.jpeg) no-repeat center;padding-left:80px;padding-bottom: 80px;")
 
 export default {
   $el:null,
@@ -262,7 +264,7 @@ export default {
   drawMode(val){
     this.currentMode = val
 
-    console.log(Gl.textures, this.currentMode, this.mode)
+    //console.log(Gl.textures, this.currentMode, this.mode)
 
 
     Tex.showTexture(this.currentMode, Gl.textures[this.mode])

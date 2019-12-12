@@ -423,7 +423,7 @@ export default {
 			this.getCanvasTexture(require('./matcap.jpeg')),
 			this.getCanvasTexture(require('./UVChecker.png'))
 		]).then(res=>{
-			console.log(res)
+			//console.log(res)
 			this.matcap_map = res[0]
 			this.uvchecker_map = res[1]
 
@@ -463,7 +463,7 @@ export default {
 		// 	child.__wireframe__ = true
 		// }
 
-		console.log('currentDrawMode----------:', this.currentDrawMode,this.mode)
+	//	console.log('currentDrawMode----------:', this.currentDrawMode,this.mode)
 		// this.object.marterial = new THREE.MeshStandardMaterial({
 		// 	color: 0xff00ff,
 		// 	roughness: 1.0,
