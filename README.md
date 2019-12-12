@@ -8,7 +8,7 @@
 
 
 # Screenshot
-<img src="./preview1.png" style="width:600px;"/>
+<img src="https://raw.githubusercontent.com/dwqdaiwenqi/webgl-fbx-viewer/master/preview1.png"/>
 
 
 # Install
